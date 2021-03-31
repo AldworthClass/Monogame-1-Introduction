@@ -13,7 +13,14 @@ namespace Monogame_1_Introduction
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            this.Window.Title = "My First Monogame Project";
             IsMouseVisible = true;
+
+            // Set screen size
+            _graphics.PreferredBackBufferWidth = 800;
+            _graphics.PreferredBackBufferHeight = 500;
+            _graphics.ApplyChanges();
+
         }
 
         protected override void Initialize()
